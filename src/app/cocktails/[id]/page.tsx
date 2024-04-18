@@ -15,7 +15,6 @@ const SingleCocktail = async ({ params }: { params: { id: string } }) => {
   const data = await getSingleCocktailById(params.id);
   const [drink] = data.drinks as Cocktail[];
 
-  console.log({ drink });
   return (
     <div className="flex flex-col md:flex-row gap-y-4 w-full my-4 mt-10">
       <div className="md:w-1/2 w-full flex justify-center">
