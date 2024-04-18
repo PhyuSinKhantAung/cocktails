@@ -48,7 +48,7 @@ const CocktailsPage = async () => {
                 width={300}
                 height={200}
                 alt="cocktail-image"
-                className="w-full"
+                className="rounded-md object-cover w-full"
               />
               <div
                 className="
