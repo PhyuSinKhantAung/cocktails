@@ -4,7 +4,7 @@ import Image from "next/image";
 const HomePage = () => {
   return (
     <div className="relative">
-      <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[50%] flex flex-col items-center">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-1/2 flex flex-col items-center">
         <Image src="/drink.png" alt="drink" width={200} height={200} />
 
         <h1 className="tracking-widest prose prose-xl text-nowrap">
