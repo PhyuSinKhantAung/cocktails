@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Cocktail } from "../cocktails/page";
 
-const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
+const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a";
 
 const fetchCocktails: any = async (query: { search?: string }) => {
   let response;
