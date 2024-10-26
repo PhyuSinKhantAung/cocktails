@@ -3,14 +3,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { Cocktail } from "../cocktails/page";
 
-const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a";
+const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php";
 
 const fetchCocktails: any = async (query: { search?: string }) => {
   let response;
   if (query?.search) {
-    response = await fetch(`${url}${query.search}`);
+    response = await fetch(`${url}?s=${query.search}`);
   } else {
-    response = await fetch(url);
+    response = await fetch(`${url}?f=a`);
   }
 
   if (!response.ok) throw new Error("Failed to fetch drinks");
